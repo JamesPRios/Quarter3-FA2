@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Q3 FA2</title>
+  <title>Q3 FA1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>calcU</h1>
-  <p id="intro"><b>This page is ..... </b></p>
-  <input type="number" id="num1" class="textbox" placeholder="Enter first number">
-  <input type="number" id="num2" class="textbox" placeholder="Enter second number">
-  <br>
-  <button class="button" onclick="calculate('+')">+</button>
-  <button class="button" onclick="calculate('-')">-</button>
-  <button class="button" onclick="calculate('*')">*</button>
-  <button class="button" onclick="calculate('/')">/</button>
-  <button class="button" onclick="calculate('%')">%</button>
-  <p id="result">Results will be displayed here.</p>
-
+  <div class="container">
+    <h1>calcU</h1>
+    <p id="instructions">Enter two numbers and click an operation button.</p>
+    <input type="number" id="num1" class="textbox" placeholder="Enter first number">
+    <input type="number" id="num2" class="textbox" placeholder="Enter second number">
+    <br>
+    <button class="button" onclick="add()">+</button>
+    <button class="button" onclick="subtract()">-</button>
+    <button class="button" onclick="multiply()">*</button>
+    <button class="button" onclick="divide()">/</button>
+    <button class="button" onclick="modulo()">%</button>
+    <p id="result">Results will be displayed here.</p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
